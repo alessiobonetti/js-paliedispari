@@ -16,6 +16,7 @@ function checkpari(num){
   if (num % 2 == 0){
     numeroPari = true;
   }
+  return numeroPari;
 }
 // Dichiariamo chi ha vinto.
 var risultato = checkpari(sommaNumeri);
