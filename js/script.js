@@ -4,9 +4,20 @@ var parolaUtente = prompt("Inserisci una parola");
 
 
 // Creare una funzione per capire se la parola inserita è palindroma
-var arrayParola = [];
-
-for (i=0; i<parolaUtente.length; i++) {
-  arrayParola.push(parolaUtente.charAt(i))
+function checkpalindrome (text){
+  var palcheck = false;
+  var revtext = text.split("").reverse().join("");
+  if (text == revtext) {
+    palcheck = true
+  }
+  return palcheck;
 }
-console.log(arrayParola);
+
+var check = checkpalindrome(parolaUtente);
+
+if (check == true){
+  alert("la parola è palindroma");
+}
+else{
+  alert("la parola non è palindroma");
+}

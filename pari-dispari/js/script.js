@@ -8,7 +8,29 @@ function generaNumero() {
   return numeroGenerato
 }
 var numeroPc = generaNumero();
-console.log(numeroPc);
 // Sommiamo i due numeri
+var sommaNumeri = numeroUtente + numeroPc;
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+function checkpari(num){
+  var numeroPari= false;
+  if (num % 2 == 0){
+    numeroPari = true;
+  }
+}
 // Dichiariamo chi ha vinto.
+var risultato = checkpari(sommaNumeri);
+if (risultato == true && pariDispari == "pari") {
+  alert("Ha vinto l'utente");
+}
+else if (risultato == false && pariDispari == "dispari"){
+  alert("Ha vinto l'utente");
+}
+else{
+  alert("Ha vinto il pc");
+}
+
+console.log(pariDispari);
+console.log(numeroUtente);
+console.log(numeroPc);
+console.log(sommaNumeri);
+console.log(risultato);
